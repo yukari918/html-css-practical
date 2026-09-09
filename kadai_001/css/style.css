@@ -1,0 +1,272 @@
+/* =========================
+   共通
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* =========================
+   ヘッダー
+========================= */
+header {
+  background-color: #ffffff;
+}
+
+.header-inner {
+  max-width: 1150px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 3px 12px 5px;
+  border: 1px solid #000000;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* =========================
+   メイン画像
+========================= */
+.main-visual {
+  width: 100%;
+}
+
+.main-visual img {
+  width: 100%;
+  height: auto;
+}
+
+/* =========================
+   共通セクション
+========================= */
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.4;
+}
+
+/* =========================
+   About
+========================= */
+.about {
+  padding-top: 90px;
+}
+
+.about-content {
+  max-width: 1015px;
+  margin: 85px auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 145px;
+}
+
+.about-image {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  margin: 0 0 14px;
+  font-size: 24px;
+}
+
+.about-text ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.about-text li {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =========================
+   Works
+========================= */
+.works {
+  padding-top: 120px;
+}
+
+.works-list {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.works-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.works-item img {
+  width: 100%;
+  height: auto;
+}
+
+.works-item p {
+  margin: 10px 0 0;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+/* =========================
+   フッター
+========================= */
+footer {
+  padding: 75px 20px 25px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* =========================
+   スマートフォン
+   最大767px
+========================= */
+@media screen and (max-width: 767px) {
+  .header-inner {
+    height: 70px;
+    padding: 0 18px;
+  }
+
+  .logo {
+    padding: 2px 7px 3px;
+    font-size: 20px;
+  }
+
+  nav {
+    gap: 16px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  section {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  section h2 {
+    font-size: 34px;
+  }
+
+  .about {
+    padding-top: 45px;
+  }
+
+  .about-content {
+    margin-top: 35px;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .about-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-text {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .about-text h3 {
+    font-size: 24px;
+  }
+
+  .about-text li {
+    font-size: 18px;
+  }
+
+  .works {
+    padding-top: 65px;
+  }
+
+  .works-list {
+    margin-top: 35px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .works-item {
+    width: 100%;
+  }
+
+  .works-item p {
+    margin-top: 8px;
+    font-size: 18px;
+  }
+
+  footer {
+    padding-top: 60px;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+}
